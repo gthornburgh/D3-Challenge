@@ -15,8 +15,15 @@ function makeResponsive() {
    let width = svgWidth - margin.left - margin.right;
    let height = svgHeight - margin.top - margin.bottom;
 
-       // svg wrapper, append group with size
-       let svg = d3.select("#scatter")
+   // svg wrapper, append group with size
+   let svg = d3.select("#scatter")
        .append("svg")
        .attr("width", svgWidth)
        .attr("height", svgHeight);
+    
+    let chartGroup = svg.append("g")
+       .attr("transform", `translate(${margin.left}, ${margin.top})`);
+    
+    // import csv
+    d3.csv("/assets/data/data.csv")
+        .then(function(riskData){
