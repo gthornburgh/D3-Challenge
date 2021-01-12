@@ -37,3 +37,8 @@ function makeResponsive() {
         data.abbr = data.abbr;
         data.income = +data.income;
     });
+    
+    // x / y scales
+    let xLinearScale = d3.scaleLinear()
+    .domain([8.5, d3.max(riskData, d => d.poverty)])
+    .range([0, width]);
