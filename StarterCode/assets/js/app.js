@@ -11,4 +11,6 @@ function makeResponsive() {
     };
     
 
-   
+   // svg height / width
+   let width = svgWidth - margin.left - margin.right;
+   let height = svgHeight - margin.top - margin.bottom;
