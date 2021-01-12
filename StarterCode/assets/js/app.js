@@ -27,3 +27,13 @@ function makeResponsive() {
     // import csv
     d3.csv("/assets/data/data.csv")
         .then(function(riskData){
+
+    // retrieve data, convert to string
+    riskData.forEach(function(data) {
+        data.age = +data.age;
+        data.smokes = +data.smokes;
+        data.healthcare = +data.healthcare;
+        data.poverty = +data.poverty;
+        data.abbr = data.abbr;
+        data.income = +data.income;
+    });
