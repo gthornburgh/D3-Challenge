@@ -14,3 +14,9 @@ function makeResponsive() {
    // svg height / width
    let width = svgWidth - margin.left - margin.right;
    let height = svgHeight - margin.top - margin.bottom;
+
+       // svg wrapper, append group with size
+       let svg = d3.select("#scatter")
+       .append("svg")
+       .attr("width", svgWidth)
+       .attr("height", svgHeight);
