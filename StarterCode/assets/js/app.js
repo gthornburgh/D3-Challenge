@@ -61,3 +61,7 @@ function makeResponsive() {
         
         let circlesGroup = chartGroup.selectAll("circle")
             .data(riskData)
+            .append("circle")
+            .attr("cx", d => xLinearScale(d.poverty))
+            .attr("cy", d => yLinearScale(d.healthcare))
+            .attr("r", 10)
