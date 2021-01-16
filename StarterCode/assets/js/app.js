@@ -59,3 +59,5 @@ function makeResponsive() {
         chartGroup.append("g")
         .call(yAxis);
         
+        let circlesGroup = chartGroup.selectAll("circle")
+            .data(riskData)
