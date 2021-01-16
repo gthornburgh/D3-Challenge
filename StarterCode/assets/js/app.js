@@ -69,3 +69,8 @@ function makeResponsive() {
             .attr("opacity", ".6")
             .attr("stroke-width", "1")
             .attr("stroke", "black");
+
+            chartGroup.select("g")
+            .selectAll("circle")
+            .data(riskData)
+            .enter()
