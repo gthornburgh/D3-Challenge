@@ -89,3 +89,6 @@ function makeResponsive() {
             .attr("transform", "rotate(-90)")
             .attr("y", 0 - 50)
             .attr("x", 0 -250)
+            .attr("dy", "1em")
+            .attr("class", "axisText")
+            .text("Lacks Healthcare (%)");
