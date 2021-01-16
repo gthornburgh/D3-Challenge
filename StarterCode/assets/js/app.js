@@ -65,3 +65,7 @@ function makeResponsive() {
             .attr("cx", d => xLinearScale(d.poverty))
             .attr("cy", d => yLinearScale(d.healthcare))
             .attr("r", 10)
+            .attr("fill", "lightblue")
+            .attr("opacity", ".6")
+            .attr("stroke-width", "1")
+            .attr("stroke", "black");
