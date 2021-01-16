@@ -96,3 +96,10 @@ function makeResponsive() {
         chartGroup.append("text")
             .attr("transform", `translate(${width / 2.5}, ${height + margin.top + 25})`)
             .attr("class", "axisText")
+            .text("In Poverty (%)");
+        });
+        }
+        
+        makeResponsive();
+    
+        // end 
