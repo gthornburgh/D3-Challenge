@@ -92,3 +92,7 @@ function makeResponsive() {
             .attr("dy", "1em")
             .attr("class", "axisText")
             .text("Lacks Healthcare (%)");
+
+        chartGroup.append("text")
+            .attr("transform", `translate(${width / 2.5}, ${height + margin.top + 25})`)
+            .attr("class", "axisText")
