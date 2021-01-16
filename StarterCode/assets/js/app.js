@@ -55,3 +55,7 @@ function makeResponsive() {
         chartGroup.append("g")
         .attr("transform", `translate(0, ${height})`)
         .call(xAxis);
+
+        chartGroup.append("g")
+        .call(yAxis);
+        
