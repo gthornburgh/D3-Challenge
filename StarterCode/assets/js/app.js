@@ -74,3 +74,13 @@ function makeResponsive() {
             .selectAll("circle")
             .data(riskData)
             .enter()
+            .append("text")
+            .text(d => d.abbr)
+            .attr("x", d => xLinearScale(d.poverty))
+            .attr("y", d => yLinearScale(d.healthcare))
+            .attr("dy",-395)
+            .attr("text-anchor", "middle")
+            .attr("font-size", "12px")
+            .attr("fill", "black");
+            
+            console.log(riskData);
