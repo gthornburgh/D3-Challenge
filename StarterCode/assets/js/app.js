@@ -51,3 +51,7 @@ function makeResponsive() {
         let xAxis = d3.axisBottom(xLinearScale);
         let yAxis = d3.axisLeft(yLinearScale);
 
+    // append to chart group
+        chartGroup.append("g")
+        .attr("transform", `translate(0, ${height})`)
+        .call(xAxis);
